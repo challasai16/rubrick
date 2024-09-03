@@ -1,0 +1,1511 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/****** Font ******/
+
+/* moonface-script */
+
+@font-face {
+    font-family: moonface-script;
+    src: url(../fonts/moonface-script/moonface-script.otf);
+}
+
+/* Navbar */
+
+.mainnav {
+    background: #0063A2;
+    padding: 0 360px;
+}
+
+.navbar-brand img {
+    margin: -50px 0;
+    width: 160px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../img/collapse.png");
+}
+
+.navbar-light .navbar-toggler {
+    color: unset;
+    border-color: unset;
+}
+
+.reranumber {
+    font-family: 'Montserrat', sans-serif;
+    padding: 6px 16px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: white;
+    border-radius: 6px;
+    letter-spacing: 5px;
+    margin-right: 80px;
+}
+
+.menuesitem {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: unset;
+}
+
+.dropdown1 img {
+    width: 30px;
+}
+
+.btn:hover {
+    color: unset;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 150%;
+    right: 0;
+    left: unset !important;
+    margin-top: .125rem;
+    background: transparent;
+    border: none;
+}
+
+.dropdown-menu {
+    top: 150%;
+    right: 0;
+    left: unset !important;
+    margin-top: .125rem;
+    background: transparent;
+    border: none;
+}
+
+.dropdown-menu1 li {
+    width: 130px;
+    margin-left: auto;
+}
+
+
+
+.dropdown-menu1 li a {
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: 0.4s;
+    /*color: #00306e;*/
+    color: white;
+}
+
+.dropdown-menu1 li a:hover {
+    color: white;
+    border-bottom: 1px solid #00306e;
+    background-color: unset;
+}
+
+.dropdown-item1 {
+    transition: 0.4s;
+}
+
+.dropdown-item1:focus,
+.dropdown-item1:hover {
+    color: white;
+    background-color: transparent;
+    border-bottom: 1px solid #00306e;
+}
+
+/* Tulip Head */
+.tuliphead video{
+    position:relative;
+}
+/*.tulipheadmain {*/
+/*    background: url(../img/mainimage.png) no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+.tulipheadmain {
+    /*background: url(../img/mainimage.png) no-repeat;*/
+    position:absolute;
+    background-size: cover;
+    z-index:2;
+    top:110px;
+    width:100%;
+}
+
+
+
+.tulipheadtext {
+    padding: 0px 200px;
+    padding-top: 320px;
+    padding-bottom: 465px;
+}
+
+.tulipheadtext h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.tulipheadtext h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.downloadbtn {
+    font-family: 'Chivo', sans-serif;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0063A2;
+}
+
+
+/* Rubrick Tulip */
+
+.rubricktulipmain {
+    background: url(../img/Pattren2.svg) no-repeat;
+    background-size: cover;
+    padding: 100px 200px;
+}
+
+.rubricks {
+    background: white;
+    padding: 100px 165px;
+}
+
+.rubricktext {
+    margin-right: 50px;
+}
+
+.rubricktext h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #0063a2;
+    font-size: 30px;
+  /*  letter-spacing: 8px; */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    border-bottom: 2px solid #0063a2;
+}
+
+.rubricktext h6 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.rubrictlasttxt {
+    margin-bottom: 40px !important;
+}
+
+.glancediv {
+    margin-left: 50px;
+}
+
+.glancediv h1 {
+    font-family: moonface-script;
+    font-size: 40px;
+    text-align: center;
+    color: #0063A2;
+    margin-bottom: 20px;
+}
+
+.glances {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #808080;
+}
+
+.glances1 {
+    display: flex;
+    align-items: center;
+}
+
+.glances1 img {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.glances1 h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #808080;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.glances p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #808080;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+/* Clubhouse */
+
+.clubhousemain {
+    padding: 150px 365px;
+    background: #f2eadd;
+}
+
+.clubhousetitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.clubhousetitle span {
+    width: 21%;
+    background: #0063A2;
+    height: 3px;
+}
+
+.clubhousetitle h1 {
+    font-size: 32px;
+    margin: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #0063A2;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+}
+
+.clubhouseitems {
+    padding: 35px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 10px;
+    border: 2px solid #808080;
+    margin-bottom: 20px;
+}
+
+.clubhouseitems p {
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0063A2;
+}
+
+.clubhouseitems img {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Projects Highlights */
+
+.highlitesmain {
+    display: flex;
+    align-items: center;
+}
+
+.highlight1 {
+    background: url(../img/Flower-2.svg) no-repeat;
+    background-position: left bottom;
+    background-position-x: -110px;
+    background-position-y: 538px;
+    width: 52%;
+    padding: 65px 0;
+    background-size: 330px;
+}
+
+.hightlightimg {
+    position: relative;
+}
+
+.highlightbox {
+    position: absolute;
+    width: 390px;
+    height: 100%;
+    border: 2px solid #808080;
+    right: 0;
+    z-index: -999;
+}
+
+.hightlightimg img {
+    width: 600px;
+    padding: 30px;
+    display: block;
+    margin-left: auto;
+    z-index: 999;
+}
+
+.highlight2 {
+    background: url(../img/Pattren2.svg) no-repeat;
+    background-size: cover;
+    width: 48%;
+    height: 100%;
+    padding: 80px;
+}
+
+.highlight2 img {
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.highlight2 h1 {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: #0063A2;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #0063A2;
+    display: inline-block;
+}
+
+.highlightlist {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.highlightlisticon {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    border: 2px solid #808080;
+    border-radius: 50%;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlightlisticon span {
+    height: 12px;
+    width: 12px;
+    background: #808080;
+    border-radius: 50%;
+}
+
+.highlightlist p {
+    font-family: 'Chivo', sans-serif;
+    color: #808080;
+    margin-bottom: 0;
+}
+
+.enquirenow {
+    margin-top: 30px;
+}
+
+/* .highlightsimages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.owl-two {
+    position: relative;
+}
+
+.owl-two img {
+    width: 100%;
+    overflow: hidden;
+    height: 346px;
+}
+
+.owl-two .owl-nav {
+    margin-top: 0;
+}
+
+.owl-two .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%, -50%);
+}
+
+.owl-two .owl-prev i {
+    color: #00306e;
+}
+
+.owl-two .owl-next {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translate(-50%, -50%);
+}
+
+.owl-two .owl-next i {
+    color: #00306e;
+}
+
+
+/* Nearby Location */
+
+.locationsmain {
+    background: url(../img/Pattren2.svg) no-repeat;
+    background-size: cover;
+    padding: 100px 200px;
+}
+
+.locationitems {
+    background: white;
+    padding: 100px 165px;
+}
+
+.locationtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.locationtitle span {
+    width: 12%;
+    background: #0063A2;
+    height: 3px;
+}
+
+.locationtitle h1 {
+    font-size: 32px;
+    margin: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #0063A2;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+}
+
+.locationlist {
+    margin-right: 50px;
+}
+
+.locationcities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #808080;
+}
+
+.locationcities1 {
+    display: flex;
+    align-items: center;
+}
+
+.locationcities1 i {
+    margin-right: 15px;
+    color: #808080;
+    font-size: 18px;
+}
+
+.locationcities1 h6 {
+    font-family: 'Chivo', sans-serif;
+    font-weight: 300;
+    color: #808080;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.locationcities p {
+    font-family: 'Chivo', sans-serif;
+    font-weight: 300;
+    color: #808080;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.locationview {
+    margin-left: 50px;
+}
+
+.locationview p {
+    font-family: 'Chivo', sans-serif;
+    font-weight: 300;
+    color: #808080;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* Master Plan */
+
+.masterplanmain {
+    padding: 60px 365px;
+    background: url(../img/Flower-1.svg) no-repeat;
+    background-position: bottom -100px left 330px;
+    background-size: 250px;
+}
+
+.masterplantxt h1 {
+    font-size: 32px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #808080;
+    color: #0063A2;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+}
+
+.masterplantxt p {
+    font-family: 'Montserrat', sans-serif;
+    color: #4d4d4d;
+    text-align: justify;
+    margin-bottom: 80px;
+}
+
+.mainplan img {
+    width: 100%;
+}
+
+/* Floor Plans */
+
+.floorplansmain {
+    background: #f2eadd;
+    padding: 150px 365px;
+}
+
+.floortitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.floortitle span {
+    width: 30%;
+    background: #0063A2;
+    height: 3px;
+}
+
+.floortitle h1 {
+    font-size: 32px;
+    margin: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #0063A2;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+}
+
+.floorsp {
+    background: white;
+}
+
+.floorsp img {
+    width: 100%;
+}
+
+.modal.show .modal-dialog {
+    transform: none;
+    max-width: 1200px !important;
+}
+
+.floortxt {
+    background: #0063A2;
+    padding: 30px;
+}
+
+.floortxt h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.floortxt p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.owl-one {
+    position: relative;
+}
+
+button.owl-prev {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translate(-50%, -50%);
+}
+
+button.owl-next {
+    position: absolute;
+    top: 50%;
+    right: -45px;
+    transform: translate(-50%, -50%);
+}
+
+.owl-prev i {
+    font-size: 30px;
+    color: #808080;
+}
+
+.owl-next i {
+    font-size: 30px;
+    color: #808080;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: unset;
+    color: unset;
+    text-decoration: none;
+}
+
+/* Contact Us Form */
+
+.contactusmain {
+    background: url(../img/Pattren2.svg) no-repeat;
+    background-size: cover;
+    padding: 100px 200px;
+}
+
+.contactusitems {
+    background: white;
+    padding: 100px 165px;
+}
+
+.contactustitle h1 {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: #0063A2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contactustitle p {
+    font-family: 'Montserrat', sans-serif;
+    color: #808080;
+    margin-bottom: 20px;
+}
+
+.row.contactusrow {
+    align-items: end;
+}
+
+.contactusinputs {
+    margin-right: 50px;
+}
+
+.contactusinputs input {
+    font-family: 'Montserrat', sans-serif;
+    color: #808080;
+    padding: 5px 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #0063A2;
+}
+
+.contactusinputs input::placeholder {
+    color: #808080;
+}
+
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.contactusinputs input:first-child {
+    margin-bottom: 70px;
+}
+
+.rc-anchor-light.rc-anchor-normal,
+.rc-anchor-light.rc-anchor-compact {
+    border: 1px solid #0063A2 !important;
+}
+
+.submitbtn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 80px;
+}
+
+.contactfooter {
+    margin-top: 50px;
+}
+
+.contactfooter p {
+    font-family: 'Montserrat', sans-serif;
+    color: #808080;
+    font-size: 14px;
+}
+
+/* Footer */
+
+.footermain {
+    padding: 80px 365px;
+    background: #0063A2;
+}
+
+/* .logoline1 {
+    border-right: 1px solid #fff;
+} */
+
+.forborder {
+    border-right: 1px solid #fff;
+}
+
+.logoline1 img {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logoline2 img {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logolines img:first-child {
+    margin-bottom: 30px;
+}
+
+.footer11 {
+    display: flex;
+}
+
+.footer11 p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
+    padding-right: 30px;
+}
+
+.footertxt1 {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.footericon {
+    display: flex;
+    align-items: center;
+}
+
+.footericon i {
+    margin-right: 8px;
+}
+
+.footericon p {
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 8px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.copyright p {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid white;
+    color: #00afdc;
+    text-align: center;
+}
+
+
+
+/* Responsive */
+
+@media (max-width:1700px) {
+
+    /* Navbar */
+
+    .mainnav {
+        background: #0063A2;
+        padding: 0px 145px;
+    }
+
+    /* Tulip Head */
+
+    .tulipheadtext {
+        padding: 0 150px;
+        padding-top: 250px;
+        padding-bottom: 355px;
+    }
+
+    /* Rubrick Tulip */
+
+    .rubricktulipmain {
+        padding: 80px 80px;
+    }
+
+    .rubricks {
+        padding: 60px 70px;
+    }
+
+    /* Clubhouse */
+
+    .clubhousemain {
+        padding: 100px 150px;
+        background: #f2eadd;
+    }
+
+    /* Projects Highlights */
+
+    /* Nearby Location */
+
+    .locationsmain {
+        padding: 80px 80px;
+    }
+
+    .locationitems {
+        padding: 60px 70px;
+    }
+
+    /* Master Plan */
+
+    .masterplanmain {
+        padding: 50px 150px;
+        background: url(../img/Flower-1.svg) no-repeat;
+        background-position: bottom -100px left 150px;
+        background-size: 250px;
+    }
+
+    /* Floor Plans */
+
+    .floorplansmain {
+        background: #f2eadd;
+        padding: 60px 150px;
+    }
+
+    /* Contact Us Form */
+
+    .contactusmain {
+        padding: 80px 80px;
+    }
+
+    .contactusitems {
+        padding: 60px 70px;
+    }
+
+    /* Footer */
+
+    .footermain {
+        padding: 80px 150px;
+    }
+
+
+}
+
+
+@media (max-width:1500px) {
+
+
+    /* Navbar */
+
+    /* Tulip Head */
+
+    /* Rubrick Tulip */
+
+    /* Clubhouse */
+
+    /* Projects Highlights */
+
+    /* Nearby Location */
+
+    /* Master Plan */
+
+    /* Floor Plans */
+
+    /* Contact Us Form */
+
+    /* Footer */
+}
+
+
+@media (max-width:1400px) {
+
+
+    /* Navbar */
+
+    /* Tulip Head */
+
+    /* Rubrick Tulip */
+
+    /* Clubhouse */
+
+    .clubhousetitle h1 {
+        font-size: 24px;
+        margin: 0 20px;
+        letter-spacing: 12px;
+    }
+
+    /* Projects Highlights */
+
+    .highlight2 h1 {
+        font-size: 24px;
+        padding-bottom: 6px;
+        margin-bottom: 20px;
+        letter-spacing: 10px;
+    }
+
+    /* Nearby Location */
+
+    .locationtitle h1 {
+        font-size: 24px;
+        margin: 0 20px;
+        letter-spacing: 12px;
+    }
+
+    /* Master Plan */
+
+    .masterplantxt h1 {
+        font-size: 24px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #808080;
+        letter-spacing: 12px;
+    }
+
+    /* Floor Plans */
+
+    .floortitle h1 {
+        font-size: 24px;
+        margin: 0 20px;
+        letter-spacing: 12px;
+    }
+
+    /* Contact Us Form */
+
+    .contactustitle h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+
+}
+
+
+@media (max-width:1300px) {
+
+
+    /* Navbar */
+
+    /* Tulip Head */
+
+    /* Rubrick Tulip */
+
+    /* Clubhouse */
+
+    /* Projects Highlights */
+
+    /* Nearby Location */
+
+    /* Master Plan */
+
+    /* Floor Plans */
+
+    /* Contact Us Form */
+
+    /* Footer */
+
+}
+
+
+@media (max-width:991px) {
+
+
+    /* Navbar */
+
+    .mainnav {
+        background: #0063A2;
+        padding: 0px 20px;
+    }
+
+    /* Tulip Head */
+
+    .tulipheadtext {
+        padding: 0 30px;
+        padding-top: 130px;
+        padding-bottom: 200px;
+    }
+
+    /* Rubrick Tulip */
+
+    .rubricktulipmain {
+        padding: 40px 20px;
+    }
+
+    .rubricks {
+        padding: 40px 30px;
+    }
+
+    .rubricktext {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .glancediv {
+        margin-left: 0;
+    }
+
+    /* Clubhouse */
+
+    .clubhousetitle {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    .clubhousetitle span {
+        display: none;
+    }
+
+    .clubhousemain {
+        padding: 30px 10px;
+        background: #f2eadd;
+    }
+
+    /* Projects Highlights */
+
+    .highlitesmain {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .highlight1 {
+        background: url(../img/Flower-2.svg) no-repeat;
+        background-position: left bottom;
+        background-position-x: -110px;
+        background-position-y: 538px;
+        width: 100%;
+        padding: 65px 0;
+        background-size: 330px;
+    }
+
+    .highlight2 {
+        background: url(../img/Pattren2.svg) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        padding: 80px;
+    }
+
+    /* .highlightsimages {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .highlightsimages img {
+        width: 100%;
+        overflow: hidden;
+        height: unset;
+    } */
+
+    /* Nearby Location */
+
+    .locationsmain {
+        padding: 40px 20px;
+    }
+
+    .locationitems {
+        padding: 40px 30px;
+    }
+
+    .locationtitle span {
+        display: none;
+    }
+
+    .locationtitle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    .locationlist {
+        margin-right: 0;
+    }
+
+    .locationview {
+        margin-left: 0;
+    }
+
+    /* Master Plan */
+
+    .masterplanmain {
+        padding: 20px 30px;
+        background: url(../img/Flower-1.svg) no-repeat;
+        background-position: bottom -100px left 150px;
+        background-size: 250px;
+    }
+
+    .masterplantxt {
+        margin-bottom: 20px;
+    }
+
+    /* Floor Plans */
+
+    .floorplansmain {
+        background: #f2eadd;
+        padding: 30px;
+    }
+
+    .floortitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    .floortitle span {
+        display: none;
+    }
+
+    .modal.show .modal-dialog {
+        transform: none;
+        max-width: 800px !important;
+    }
+
+    /* Contact Us Form */
+
+    .contactusmain {
+        padding: 40px 20px;
+    }
+
+    .contactusitems {
+        padding: 40px 30px;
+    }
+
+    .contactusinputs {
+        margin-right: 0;
+    }
+
+    .formsubmit {
+        margin-top: 20px;
+    }
+
+    .submitbtn {
+        width: 100%;
+        padding: 15px;
+        margin-top: 30px;
+    }
+
+    /* Footer */
+
+    .footermain {
+        padding: 40px 30px;
+    }
+
+
+    .footerlogorow {
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media (max-width:768px) {
+
+
+    /* Navbar */
+
+    /* Tulip Head */
+
+    /* Rubrick Tulip */
+
+    /* Clubhouse */
+
+    /* Projects Highlights */
+
+    /* Nearby Location */
+
+    /* Master Plan */
+
+    /* Floor Plans */
+
+    .owl-nav {
+        display: none;
+    }
+
+    .modal.show .modal-dialog {
+        transform: none;
+        max-width: 700px !important;
+    }
+
+    /* Contact Us Form */
+
+    /* Footer */
+
+}
+
+
+@media (max-width:576px) {
+
+
+    /* Navbar */
+
+    .navbar-brand img {
+        margin: -20px 0;
+        width: 90px;
+    }
+
+    .mainnav {
+        background: #0063A2;
+        padding: 0px 0px;
+    }
+
+    .reranumber {
+        font-family: 'Montserrat', sans-serif;
+        padding: 6px 10px;
+        border: 1px solid #fff;
+        background: transparent;
+        color: white;
+        border-radius: 6px;
+        letter-spacing: 2px;
+        margin-right: 0px;
+        font-size: 15px;
+    }
+
+    .tulipheadmain {
+        /*background: url(../img/mainimage.jpg) no-repeat;*/
+        /*background: url(../img/mainimagemobile.jpg) no-repeat;*/
+        background-size: 100% 100%;
+    }
+
+
+.tulipheadtext h2 , .tulipheadtext h3{
+font-size: 20px;
+}
+    .tulipheadtext {
+        padding: 0 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    /* Tulip Head */
+
+    /* Rubrick Tulip */
+
+    .rubricktulipmain {
+        padding: 20px 10px;
+    }
+
+    .rubricks {
+        padding: 10px 5px;
+    }
+
+    .rubricktext h1 {
+        font-size: 20px;
+        letter-spacing: 8px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .glances1 h6 {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    .glances p {
+        margin-bottom: 0;
+        font-size: 14px;
+        text-align: right;
+    }
+
+    /* Clubhouse */
+
+    .clubhousetitle h1 {
+        font-size: 20px;
+        margin: 0px 10px;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .clubhouseitems {
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid #808080;
+        margin-bottom: 20px;
+    }
+
+    /* Projects Highlights */
+
+    .highlight1 {
+        background: url(../img/Flower-2.svg) no-repeat;
+        background-position: left bottom;
+        background-position-x: -60px;
+        background-position-y: 270px;
+        width: 100%;
+        padding: 65px 0;
+        background-size: 250px;
+    }
+
+
+    .highlightbox {
+        position: absolute;
+        width: 200px;
+        height: 100%;
+        border: 2px solid #808080;
+        right: 0;
+        z-index: -999;
+    }
+
+    .hightlightimg img {
+        width: 320px;
+        padding: 30px;
+        display: block;
+        margin-left: auto;
+        z-index: 999;
+    }
+
+    .highlight2 {
+        background: url(../img/Pattren2.svg) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .highlight2 img {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    /* Nearby Location */
+
+    .locationsmain {
+        padding: 20px 10px;
+    }
+
+    .locationitems {
+        padding: 10px 5px;
+    }
+
+    .locationtitle h1 {
+        font-size: 20px;
+        margin: 0 20px;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    /* Master Plan */
+
+    .masterplanmain {
+        padding: 20px 20px;
+        background: url(../img/Flower-1.svg) no-repeat;
+        background-position: bottom -100px left 150px;
+        background-size: 250px;
+    }
+
+    .masterplantxt h1 {
+        font-size: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #808080;
+        letter-spacing: 12px;
+        text-align: center;
+    }
+
+    /* Floor Plans */
+
+    .floorplansmain {
+        background: #f2eadd;
+        padding: 20px;
+    }
+
+    .floortitle h1 {
+        font-size: 20px;
+        margin: 0 20px;
+        letter-spacing: 12px;
+        text-align: center;
+    }
+
+    .modal.show .modal-dialog {
+        transform: none;
+        max-width: unset;
+    }
+
+    /* Contact Us Form */
+
+    .contactusmain {
+        padding: 20px 10px;
+    }
+
+    .contactusitems {
+        padding: 10px 5px;
+    }
+
+    .contactustitle h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .contactusinputs input:first-child {
+        margin-bottom: 20px;
+    }
+
+    .contactusinputs input {
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+
+    .footermain {
+        padding: 20px;
+    }
+
+    .forborder {
+        border-right: none;
+    }
+
+    .logoline2 {
+        margin-bottom: 20px;
+    }
+
+    .footer1 {
+        margin-bottom: 20px;
+    }
+
+    .copyright p {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+}
+
+.dropdown-menu1{
+    background-color: #0063A2 !important;
+    padding-right: 10px;
+}
+
+/*@media (max-width:480px) {*/
+/*    .tulipheadmain {*/
+/*    background: url(../img/mainimagemobile.jpg) no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+/*}*/

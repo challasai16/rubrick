@@ -1,0 +1,282 @@
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  html {
+    overflow-x: hidden !important;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .one {
+    display: block;
+  }
+  .left,
+  .right {
+    padding: 0;
+    position: relative;
+  }
+  .project {
+    padding: 1rem 0;
+  }
+  .one .text {
+    position: absolute;
+    bottom: 5px;
+    z-index: 0;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0.6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text p {
+    letter-spacing: 0.4px;
+}
+  .about {
+    display: block;
+    padding: 0;
+  }
+  .about-right img {
+    width: 100%;
+    padding-top: 3rem;
+  }
+  #about {
+    height: auto;
+    padding:2rem 0;
+}
+#aboutus h3 {
+    width: 25%;
+    margin: 0 auto;
+}
+  #overview {
+    background: none;
+  }
+  .overview {
+    display: block;
+}
+  .overview-left {
+    width: 100%;
+    padding-top: 3rem;
+  }
+  .overview-left ul li:nth-child(1) {
+    width: 100%;
+  }
+  .overview-left ul li:nth-child(2) {
+    width: 100%;
+    padding-top: 2rem;
+  }
+  .overview-left ul li:nth-child(3) {
+    width: 100%;
+    padding-top: 2rem;
+  }
+  .overview-left ul li:nth-child(4) {
+    width: 100%;
+    padding-top: 2rem;
+  }
+  .overview-right img {
+    width: 100%;
+    height: auto!important;
+}
+.overview-right {
+    width: 100%;
+    padding-top: 3rem!important;
+}
+  .testimonial {
+    display: block;
+  }
+  .youtube {
+    width: 100%;
+    padding: 0;
+    height: auto;
+  }
+  .award {
+    display: block;
+    padding-top: 0;
+  }
+  .award-left {
+    width: 100%;
+    padding: 2rem 0;
+    height: auto;
+  }
+  #award {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  .award-right {
+    width: 100%;
+  }
+  .award-left ul li {
+    line-height: 2.3rem;
+}
+  .awd {
+    width: 100%;
+  }
+  .footer {
+    display: block!important;
+  }
+  .contact {
+    padding-top: 1.5rem;
+  }
+  .address {
+    padding-top: 2rem;
+}
+  .sales {
+    padding: 2rem 0;
+  }
+  .form-container {
+    width: 350px;
+  }
+  input#phone {
+    width:100%;
+  }
+  ul.menu-items {
+    display: block;
+    list-style: none;
+    background: #090909b8;
+    width: 70%;
+    margin: 0;
+    padding: 1rem;
+    line-height: 2;
+  }
+  .off-canvas {
+    width: 300px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: 0.4s ease-in-out;
+    z-index: 1060;
+    padding-left: 15px;
+    padding-top: 20px;
+  }
+  .list {
+    display: none;
+  }
+  .toggle {
+    display: flex;
+  }
+  .off-canvas.open {
+    transform: translateX(0);
+  }
+  #off-canvas-menu ul li {
+    color: black;
+    font-size: 25px;
+    font-weight:bold;
+    line-height: 2;
+  }
+  #off-canvas-menu {
+    display: block;
+  }
+  #off-canvas-menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+.aboutus .about-left {
+    padding-left: 0;
+    padding-top: 1rem;
+}
+.main-about {
+    padding-top: 3rem;
+}
+
+.about.main-about img {
+    padding-top: 0;
+}
+.about h3 {
+    line-height: 1.9rem;
+    width:40%;
+    margin:0 auto;
+}
+#about h4{
+    text-align:center;
+}
+.about p {
+    padding: 0.5rem 0;
+    text-align:center;
+}
+.about a {
+    text-align: center;
+    display: block;
+}
+ul.project-dropdown {
+    height: 0;
+    overflow: hidden;
+}
+i.fa-solid.fa-angle-down {
+    margin-left: 5px;
+    color: #0000006e;
+    transform:rotate(180deg);
+    transition:all 0.3s ease-in;
+}
+li.mobile-drop:hover i.fa-solid.fa-angle-down{
+    transform:rotate(0deg); 
+}
+li.mobile-drop:hover .project-dropdown {
+    overflow: visible;
+    height: 150px;
+    transition: all 0.2s ease-in;
+}
+.card {
+    width: 100%!important;
+    margin: 0 !important;
+}
+img.desktop{
+    display:none!important;
+}
+img.mobile{
+    display:block!important;
+}
+.follow {
+    padding: 1.5rem 0 2rem 0;
+}
+.main-copy {
+    display: block!important;
+}
+.copy-left, .copy-right{
+    padding:1rem 0;
+}
+.modal-content {
+    width: 100%;
+}
+p.para {
+    text-align: center;
+}
+h2.about-text {
+    width: 30%;
+    margin: 0 auto;
+}
+.newly-launched {
+    font-weight: 400;
+    font-size: 12px;
+}
+.soon-projects {
+    display: block;
+    padding: 4rem 0;
+    border-bottom: 2px solid #875F41;
+}
+.project-img {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.project-table {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+}

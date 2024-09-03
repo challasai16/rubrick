@@ -1,0 +1,64 @@
+#thankyou {
+    background-color: white;
+        border-radius: 10px;
+        width: 50%;
+        margin: 2rem auto;
+        box-shadow: -1px -1px 8px 1px #022E51;;
+        text-align: center;
+        animation: flash 1.2s ease 0s infinite;
+    }
+    
+    #h2thankyou {
+      color: #4999b6;
+      padding: 10px;
+      font-size: 44px;
+      font-family: 'Open Sans', 'sans-serif';
+      -webkit-animation: flashtwo 1.2s linear 0s infinite;
+      animation: flashtwo 1.2s linear 0s infinite;
+    }
+    .container2{
+       margin-top:10%; 
+    }
+    @keyframes flash {
+      0% {
+        background-color: white;
+      }
+      49% {
+        background-color: white;
+      }
+      50% {
+        background-color: #99775D;
+      }
+      100% {
+        background-color: #99775D;
+      }
+    }
+    
+    @keyframes flashtwo {
+      0% {
+        color: #003d6e;
+      }
+      49% {
+        color: #003d6e;
+      }
+      50% {
+        color: white;
+      }
+      100% {
+        color: white;
+      }
+    }
+    /*mobile view*/
+    @media only screen and (min-width:320px)
+        and (max-width:768px){
+    .container2 {
+        margin-top: 8rem;
+    }	    
+    .jumbotron {
+        width: 95%;
+        margin: 0 auto;
+    }
+    #thankyou {
+        width: 100%;
+    }
+    }

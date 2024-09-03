@@ -1,0 +1,142 @@
+<?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require_once "PHPMailer/Exception.php";
+require_once "PHPMailer/PHPMailer.php";
+require_once "PHPMailer/SMTP.php";
+
+$mail = new PHPMailer(true);
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "rubrik";
+
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$email = $_POST['email'];
+$interested = $_POST['interested'];
+$message = $_POST['message'];
+
+$conn = new mysqli($servername, $username, $password, $database);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Check if email and phone number already exist
+$sql_check = "SELECT * FROM leads WHERE Email = '$email' OR Number = '$phone'";
+$result = $conn->query($sql_check);
+
+if ($result->num_rows > 0) {
+    // Email or phone number already exists
+    echo "Error: Email or phone number already exists. Please use a different email or phone number.";
+} else {
+    // Email and phone number are unique, proceed with insertion and email sending
+    $currentDateTime = date("Y-m-d H:i:s");
+    $sql = "INSERT INTO leads (Name, Email, Number, Interested, Message, Date) VALUES ('$name', '$email', '$phone', '$interested', '$message', '$currentDateTime')";
+
+    if ($conn->query($sql) === TRUE) {
+        // Insert successful, send data to CRM
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $api_url = "https://agility-fun-253--dev.sandbox.my.salesforce-sites.com/services/apexrest/leadservice";
+
+            $data = array(
+                "Name" => $name,
+                "Source" => "Website",
+                "Email" => $email,
+                "Phone" => $phone,
+                "Interested-In" => $interested,
+                "Message" => $message
+            );
+            $ch = curl_init($api_url);
+            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt(
+                $ch,
+                CURLOPT_HTTPHEADER,
+                array(
+                    "Content-Type: application/json"
+                )
+            );
+
+            $response = curl_exec($ch);
+            if (curl_errno($ch)) {
+                echo "cURL error: " . curl_error($ch);
+            }
+            curl_close($ch);
+        }
+
+        // Send email notification
+        $mail = new PHPMailer(true);
+        try {
+            $mail->isSMTP();
+            $mail->Host = 'smtp.gmail.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'madworkdeveloper@gmail.com';
+            $mail->Password = 'oklo toyb yeca iwex';
+            $mail->SMTPSecure = 'tls';
+            $mail->Port = 587;
+
+            $mail->setFrom('shivamadworks@gmail.com', 'Lead From Rubrick Website');
+            $mail->addAddress('leads@madworks.in', 'Lead From Rubrick Website');
+            $mail->addAddress('shivamadworks@gmail.com', 'Lead From Rubrick Website');
+            $mail->Subject = 'Lead From Rubrick Website';
+            $mail->Body = "Name: $name <br> Mobile No: $phone <br> Email Id: $email <br> InterestedIn: $interested  <br> Message: $message";
+
+            $mail->send();
+        } catch (Exception $e) {
+            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        }
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+$conn->close();
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body class="home">
+    <?php include ("thankyou-header.php") ?>
+
+    <section class="cardth">
+        <div class="row mb30">
+            <div class="col-md-12 mb20 mt20 typ">
+                <h2 class="typh2">Thank you for contacting us... !!!</h2>
+            </div>
+        </div>
+        <p class="para">We will get back to you soon.</p>
+        <div class="button-container">
+            <a href="index.php" class="home-button">Click to Home</a>
+            <a href="Tripura_Brochure.pdf" class="bro">Download Brochure
+                <i class="fa fa-download"></i></a>
+        </div>
+    </section>
+
+    <section class="social-icon-section desk-none">
+        <div class="container ftop"></div>
+    </section>
+
+    <?php include ("thankyou-footer.php") ?>
+    <script>
+        const api = "https://agility-fun-253--dev.sandbox.my.salesforce-sites.com/services/apexrest/leadservice"
+
+        const response = fetch(api)
+
+        console.log(response)
+    </script>
+</body>
+
+</html>
